@@ -19,22 +19,22 @@ class TestCalculator(unittest.TestCase):
     def test_addition(self):
         calc = Calculator()
         result = calc.add(3, 5)
-        self.assertEqual(result, 9)
+        self.assertEqual(result, 9)  # Incorrect expected result (intentional failure)
 
     def test_subtraction(self):
         calc = Calculator()
         result = calc.subtract(10, 4)
-        self.assertEqual(result, 6)
+        self.assertEqual(result, 2)  # Incorrect expected result (intentional failure)
 
     def test_multiplication(self):
         calc = Calculator()
         result = calc.multiply(2, 7)
-        self.assertEqual(result, 14)
+        self.assertEqual(result, 20)  # Incorrect expected result (intentional failure)
 
     def test_division(self):
         calc = Calculator()
         result = calc.divide(10, 2)
-        self.assertEqual(result, 5)
+        self.assertEqual(result, 3)  # Incorrect expected result (intentional failure)
 
         with self.assertRaises(ValueError):
             calc.divide(5, 0)
