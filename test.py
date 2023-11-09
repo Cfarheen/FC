@@ -19,7 +19,7 @@ class TestCalculator(unittest.TestCase):
     def test_addition(self):
         calc = Calculator()
         result = calc.add(3, 5)
-        self.assertEqual(result, 9)  # Incorrect expected result (intentional failure)
+        self.assertEqual(result, 8)  # Incorrect expected result (intentional failure)
 
     def test_subtraction(self):
         calc = Calculator()
